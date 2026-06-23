@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  emergency-radio-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VITE_ADMIN_TOKEN: ${VITE_ADMIN_TOKEN:-}
+    container_name: emergency-radio
+    ports:
+      - "8000:8000"
+    environment:
+      # === 运行模式 ===
+      - MOCK_MODE=true
+      - NO_GPU=true
+
+      # === ASR 配置 ===
+      - MODEL_SIZE=small
+      - COMPUTE_TYPE=int8
+      - CPU_THREADS=4
+
+      # === 模拟音频 ===
+      - MOCK_AUDIO_DIR=./mock_audio
+      - MOCK_INTERVAL=5.0
+
+      # === 其他 ===
+      - SEGMENTS_DIR=./segments
+      - STORAGE_PATH=./data/emergency-radio-agent.sqlite3
+      - ADMIN_TOKEN=${ADMIN_TOKEN:-}
+      - CORS_ORIGINS=${CORS_ORIGINS:-}
+      - PYTHONUNBUFFERED=1
+
+    volumes:
+      - ./data:/app/backend/data
+      - ./segments:/app/backend/segments
+      - ./mock_audio:/app/backend/mock_audio
+      - ./backend/sounds:/app/backend/sounds
+
+    restart: unless-stopped
+
+    # 如需 GPU 支持,取消注释下面
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]

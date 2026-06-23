@@ -1,0 +1,12 @@
+[
+  {"wav": "batch01_flood.wav", "text": "南区滨海大道积水超过半米，多辆汽车被困，请调派排涝设备。"},
+  {"wav": "batch02_station.wav", "text": "西区第四通信基站断电，备用电池只剩百分之十，请立即抢修。"},
+  {"wav": "batch03_hospital.wav", "text": "中心医院急诊楼发生停电，呼吸机正在使用备用电源，请支援发电车。"},
+  {"wav": "batch04_landslide.wav", "text": "北区山体公路再次发生滑坡，一辆客车被落石阻断，车上十八人等待救援。"},
+  {"wav": "batch05_battery.wav", "text": "东区物流园五号仓库冒出浓烟，疑似锂电池起火，请消防人员佩戴防护装备。"},
+  {"wav": "batch06_bridge.wav", "text": "河西桥面出现裂缝，已禁止车辆通行，请工程人员现场勘察。"},
+  {"wav": "batch07_reservoir.wav", "text": "南山水库水位快速上涨，接近警戒线，请下游村庄做好转移准备。"},
+  {"wav": "batch08_school.wav", "text": "城西小学操场发现不明气味，三名学生身体不适，请医疗和环保人员到场。"},
+  {"wav": "batch09_crash.wav", "text": "高速公路北出口发生多车追尾，两人受伤，道路完全中断。"},
+  {"wav": "batch10_patrol.wav", "text": "东区巡逻一组报告，通信清晰，道路通行正常，暂无异常。"}
+]

@@ -1,0 +1,88 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtualenv
+venv/
+env/
+ENV/
+
+# Models (large files)
+models/
+*.bin
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Audio segments
+segments/
+*.wav
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.pid
+logs/
+
+# Runtime data
+data/
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+tmp/
+output/
+outputs/
+.codex_artifacts/
+.pytest_cache/
+
+# Environment
+.env
+.env.local
+
+# Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# Downloaded SDR tools and local installer logs
+tools/sdr/sdrpp/
+tools/sdr/*-tree.json
+tools/sdr/zadig.c
+tools/sdr/zadig_resource.h
+tools/sdr/*.exe
+tools/sdr/*.zip
+tools/sdr/*-error.txt
+tools/sdr/*-result.txt
+tools/sdr/zadig-controls.txt
+tools/sdr/zadig-devices.txt

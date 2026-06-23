@@ -1,0 +1,19 @@
+{
+  "name": "emergency-radio-dashboard",
+  "version": "1.0.0",
+  "description": "应急电台智能体 - LED 大屏前端",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --host"
+  },
+  "dependencies": {
+    "vue": "^3.4.0",
+    "vue-router": "^4.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "vite": "^5.0.0"
+  }
+}
